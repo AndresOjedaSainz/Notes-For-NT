@@ -1,0 +1,21 @@
+/* VS Code Dark-ish look */
+body {
+  background: #1e1e1e;
+  color: #d4d4d4;
+}
+a { color: #4fc1ff; }
+pre, code {
+  background: #252526;
+  color: #dcdcdc;
+}
+pre {
+  padding: 12px;
+  border-radius: 6px;
+}
+
+@page { margin: 0; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
