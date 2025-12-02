@@ -114,3 +114,6 @@ sum = int(num1 / num2)
 - Wrapping with `int(...)` truncates the result toward zero drops everything after the decimal while keeping the sign. So 2.7 becomes 2, -2.7 becomes -2.
 
 We do it that way because LeetCode’s RPN spec says division should truncate toward zero (not floor). “Truncate toward zero” means move the value closer to zero by removing the fractional part: positive values round down, negative values round up, always stopping at the integer whose absolute value is smaller.
+
+- Time complexity is O(n) because the loop touches each token once and every stack push/pop is O(1). 
+- Space complexity is also O(n) in the worst case since the stack can temporarily hold up to n numbers (when all the early tokens are operands).
