@@ -36,11 +36,11 @@ int main(void)
     string name;
     int age;
 
-    cout << "What's your name?" << '\n';
-    std::cin >> name;
-
-    cout << "How old are you?";
+    cout << "How old are you?" << '\n';
     std::cin >> age;
+
+    cout << "What's your name?" << '\n';
+    std::getline(std::cin >> std::ws, name);
     
     cout << "Your name is " << name << " and you are " << age << " years old.";
 
