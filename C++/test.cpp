@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include <vector>
+#include <string>
 
 //typedef std::string text_t;
 using text_t = std::string;
@@ -30,6 +31,18 @@ int main(void)
 
     int test = pow(number1, number2);
 
-    std::cout << test;
+    std::cout << test << '\n';
+
+    string name;
+    int age;
+
+    cout << "What's your name?" << '\n';
+    std::cin >> name;
+
+    cout << "How old are you?";
+    std::cin >> age;
+    
+    cout << "Your name is " << name << " and you are " << age << " years old.";
+
     return 0;
 }
